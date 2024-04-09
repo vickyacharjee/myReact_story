@@ -24,6 +24,7 @@ const jsx=<h1>Hello from JSX</h1>;
 //  1- Class Based Components[old]
 //  2- Function Based Component Based Components[NEW]
 
+// [FUNCTIONAL BASE COMPONENT]
 const JsxComponent=()=>{
     return <h1>Hello from inside JSX Functions</h1>;
 }
