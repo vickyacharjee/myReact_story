@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"parcel index.html"
+    "start": "parcel index.html"
   },
   "keywords": [
     "react",
@@ -15,7 +15,8 @@
   "author": "vicky acharjee",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",
