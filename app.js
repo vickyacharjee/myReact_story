@@ -1,42 +1,31 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-// 1
-// using React Element
-const reactElement=React.createElement('h1',{id:"heading"},"Hello From React");
-
-// 2
-// Same thing via JSX
-const jsx=<h1>Hello from JSX</h1>;
-/*
-    JSX is an transpiller to React element
-    JSX used a library 'Babel' in order to use as same a like HTML
-    Note: JSX is not HTML code but act as same alike
-
-    compliling line: ReactElement
-        ReactElement => javaScript[Object]
 
 
-    compliling line: JSX
-        JSX[Babel] => ReactElement => javaScript[Object]
-*/ 
 
-//  React Components
-//  1- Class Based Components[old]
-//  2- Function Based Component Based Components[NEW]
-
-const JsxComponent=()=>{
-    return <h1>Hello from inside JSX Functions</h1>;
-}
-
-// same thing but different way to declare
-// First way
-const JsxComponentOne=()=> <h1>Hello from JSX function from singe line</h1>;
-
-// Second Way
-const JsxComponentTwo=()=>(
-    <h1>Hello from JSX using round  braces</h1>
+// its a good practice and a conventio to use the first letter as capital
+const Title=()=>(
+    <h1>hello from title jsx</h1>
 )
 
+const Title2=()=>(
+    <h1>hello from title2 jsx</h1>
+)
+
+const HeadingComponent=()=>(
+    
+    <div id='container'>
+        <Title/>
+        <h1>hello from functional component</h1>
+        <Title2/>
+        <Title2/>
+    </div>
+)
 const root=ReactDOM.createRoot(document.getElementById('root'));
-root.render(JsxComponentTwo());
+root.render(<HeadingComponent/>);
+
+
+
+
+

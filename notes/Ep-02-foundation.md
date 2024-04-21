@@ -21,10 +21,11 @@ const jsx=<h1>Hello from JSX</h1>;
         JSX[Babel] => ReactElement => javaScript[Object]
 */ 
 
+
 //  React Components
 //  1- Class Based Components[old]
 //  2- Function Based Component Based Components[NEW]
-
+//  3- A function returning soem piece of jsx is functional component
 const JsxComponent=()=>{
     return <h1>Hello from inside JSX Functions</h1>;
 }
@@ -43,3 +44,13 @@ const JsxComponentTwo=()=>(
 const root=ReactDOM.createRoot(document.getElementById('root'));
 root.render(JsxComponentTwo());
 ```
+
+
+PART 2 
+
+```
+
+
+```
+
+
