@@ -1,3 +1,5 @@
+
+PART 1
 ```
 import React from "react"
 import ReactDOM from "react-dom/client"
@@ -47,7 +49,6 @@ root.render(JsxComponentTwo());
 
 
 PART 2 
-
 ```
 import React from "react"
 import ReactDOM from "react-dom/client"
@@ -93,7 +94,6 @@ const HeadingComponent=()=>(
 // }
 const root=ReactDOM.createRoot(document.getElementById('root'));
 root.render(<HeadingComponent/>);
-
 ```
 
 
