@@ -1,0 +1,19 @@
+major components
+
+-nav
+-body
+-footer
+
+
+nav components
+ -logo
+ -nav-items
+
+body components
+-searchBar
+ restaurantContainer
+  -cardComponent
+ 
+footer components
+ - copyRight
+ - some links  
