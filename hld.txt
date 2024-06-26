@@ -13,7 +13,9 @@ body components
 -searchBar
  restaurantContainer
   -cardComponent
+   -image, name of restaurant, cuisines, star rating, delivery-time
  
 footer components
  - copyRight
  - some links  
+ - ADDRESS
