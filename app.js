@@ -20,31 +20,84 @@ const Header=()=>{
     )
 }
 
+
+
+
+
+const RestaurantCard=(props)=>{
+    const {resData}=props;
+    console.log(props);
+    return(
+        <div className="resCard">
+            <img className="resCardImage" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resData.imageId}/>
+            <h3>{resData.name}</h3>
+            <h3>{resData.cuisine}</h3>
+            <h3> To you within {resData.order_time}</h3>
+            <h3>{resData.rating} Star</h3>
+        </div>
+    )
+    }
+    
+    
+    // JSON DATA
+    const resObj=[
+  {
+    "name": "Pasta Paradise",
+    "cuisine": "Italian",
+    "order_time": "30 minutes",
+    "rating": 4.5,
+    "imageId": "5116a385bac0548e06c33c08350fbf11"
+  },
+  {
+    "name": "Sushi World",
+    "cuisine": "Japanese",
+    "order_time": "45 minutes",
+    "rating": 4.8,
+    "imageId": "bs9qgsy25pn07pzn6xx1"
+  },
+  {
+    "name": "Taco Town",
+    "cuisine": "Mexican",
+    "order_time": "25 minutes",
+    "rating": 4.2,
+    "imageId": "e0839ff574213e6f35b3899ebf1fc597"
+  },
+  {
+    "name": "Burger Barn",
+    "cuisine": "American",
+    "order_time": "20 minutes",
+    "rating": 4.0,
+    "imageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/9869efb0-ef0e-41eb-bffa-9d6e03eef55e_432976.JPG"
+  }
+]
+
+
+
+
+  
+
+  
+
+
+
+
 const Body=()=>{
     return(
         <div className="body">
             <div className="search"> Search </div>
             <div className="res-container">
-            <RestaurantCard resName="KFC" cuisineType="western" rating="4.4" orderWithin="38-min" /> 
-            <RestaurantCard resName="MC-Donald" cuisineType="american" rating="4.0" orderWithin="40-min"/>
-            <RestaurantCard resName="DOMINOS" cuisineType="american" rating="3.9" orderWithin="40-min"/>
+            <RestaurantCard resData={resObj[0]}/> 
+            <RestaurantCard resData={resObj[1]}/> 
+            <RestaurantCard resData={resObj[2]}/> 
+            <RestaurantCard resData={resObj[3]}/> 
             </div>
         </div>
     )
 }
-const RestaurantCard=(props)=>{
-    const {resName,cuisineType}=props;
-    console.log(props);
-    return(
-        <div className="resCard">
-            <img className="resCardImage" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/mocil3npmwpcdcfaxql1"/>
-            <h3>{props.resName}</h3>
-            <h4>{props.cuisineType}</h4>
-            <h4>{props.rating}</h4>
-            <h5>{props.orderWithin}</h5>
-        </div>
-    )
-}
+
+
+
+
 const AppLayout=()=>{
     return(
         <div className="app">
